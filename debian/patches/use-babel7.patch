@@ -1,0 +1,13 @@
+babel-preset-env is now @babel/preset-env
+
+--- a/Gruntfile.js
++++ b/Gruntfile.js
+@@ -29,7 +29,7 @@
+ 		"babel": {
+ 			options: {
+ 				sourceMap: false,
+-				presets: ["babel-preset-env"]
++				presets: ["@babel/env"]
+ 			},
+ 			dist: {
+ 				files: {

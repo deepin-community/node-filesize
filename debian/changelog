@@ -1,0 +1,67 @@
+node-filesize (6.1.0+dfsg-4) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * Add build dependency to node-babel7 (Closes: #978333)
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 27 Dec 2020 07:20:20 +0100
+
+node-filesize (6.1.0+dfsg-3) unstable; urgency=medium
+
+  * Build with babel 7
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 06 May 2020 12:52:18 +0530
+
+node-filesize (6.1.0+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+  * Add "Multi-Arch: foreign"
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 28 Mar 2020 08:21:50 +0100
+
+node-filesize (6.1.0+dfsg-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 6.1.0+dfsg
+  * Refresh patch
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 22 Feb 2020 15:43:31 +0100
+
+node-filesize (3.5.11+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Use pkg-js-tools auto test & install
+  * Add patch description
+  * Update VCS fields to salsa
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 22 Feb 2020 15:36:25 +0100
+
+node-filesize (3.5.11+dfsg-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump standards version
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 03 Jan 2018 14:48:29 +0530
+
+node-filesize (3.5.10+dfsg-2) unstable; urgency=medium
+
+  * Move to main (babel is in main now) (Closes: #877217)
+  * Remove npm2deb templates from description (Closes: #876873)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 01 Oct 2017 19:42:21 +0530
+
+node-filesize (3.5.10+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #874072)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 17 Sep 2017 12:59:26 +0530
