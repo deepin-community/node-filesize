@@ -1,0 +1,16 @@
+Description: make build reproducible
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-09-30
+
+--- a/rollup.config.js
++++ b/rollup.config.js
+@@ -1,7 +1,7 @@
+ import pkg from "./package.json";
+ 
+ const {terser} = require("rollup-plugin-terser");
+-const year = new Date().getFullYear();
++const year = new Date(process.env.SOURCE_DATE_EPOCH ? (process.env.SOURCE_DATE_EPOCH * 1000) : new Date().getTime()).getFullYear();
+ const bannerLong = `/**
+  * ${pkg.name}
+  *

@@ -1,0 +1,18 @@
+Description: fix for rollup 3
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1022627
+Forwarded: not-needed
+Last-Update: 2022-10-26
+
+--- a/rollup.config.js
++++ b/rollup.config.js
+@@ -1,6 +1,7 @@
+-import pkg from "./package.json";
++import fs from 'fs';
++const pkg = JSON.parse(fs.readFileSync("./package.json"));
+ 
+-const {terser} = require("rollup-plugin-terser");
++import {terser} from "rollup-plugin-terser";
+ const year = new Date(process.env.SOURCE_DATE_EPOCH ? (process.env.SOURCE_DATE_EPOCH * 1000) : new Date().getTime()).getFullYear();
+ const bannerLong = `/**
+  * ${pkg.name}

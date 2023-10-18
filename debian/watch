@@ -3,5 +3,5 @@ opts=\
 repacksuffix=+dfsg,\
 repack,compression=xz,\
 dversionmangle=auto,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-filesize-$1.tar.gz/ \
- https://github.com/avoidwork/filesize.js/tags .*/archive/v?([\d\.]+).tar.gz
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-filesize-$1/ \
+ https://github.com/avoidwork/filesize.js/tags .*/archive/.*/v?([\d\.]+).tar.gz

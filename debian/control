@@ -6,14 +6,11 @@ Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
 Build-Depends:
  debhelper-compat (= 13)
- , node-babel7
- , grunt
- , node-grunt-babel (>= 8.0~)
- , node-grunt-contrib-concat
- , node-grunt-contrib-nodeunit
- , node-grunt-contrib-uglify
  , dh-sequence-nodejs
-Standards-Version: 4.5.1
+ , mocha <!nocheck>
+ , node-rollup-plugin-terser
+ , rollup
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-filesize
 Vcs-Git: https://salsa.debian.org/js-team/node-filesize.git
 Homepage: https://filesizejs.com
@@ -22,9 +19,7 @@ Rules-Requires-Root: no
 Package: node-filesize
 Architecture: all
 Multi-Arch: foreign
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
 Description: generate a human readable String describing the file size
  filesize.js provides a simple way to get a human readable file size string
  from a number (float or integer) or string.
