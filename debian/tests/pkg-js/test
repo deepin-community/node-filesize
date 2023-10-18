@@ -1,1 +1,1 @@
-grunt nodeunit
+LANG=C mocha test/*.js

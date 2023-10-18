@@ -2,7 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: filesize
 Upstream-Contact: https://github.com/avoidwork/filesize.js/issues
 Source: https://filesizejs.com
-Files-Excluded: lib/*.min.js* lib/filesize.js
+Files-Excluded: dist
 
 Files: *
 Copyright: 2017 Jason Mulligan <jason.mulligan@avoidwork.com>
@@ -10,7 +10,7 @@ License: BSD-3-Clause
 
 Files: debian/*
 Copyright: 2017 Pirate Praveen <praveen@debian.org>
- 2020 Xavier Guimard <yadd@debian.org>
+ 2020 Yadd <yadd@debian.org>
 License: BSD-3-Clause
 
 License: BSD-3-Clause

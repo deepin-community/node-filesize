@@ -1,3 +1,61 @@
+node-filesize (10.0.3+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Add fix for rollup 3 (Closes: #1022627)
+
+ -- Yadd <yadd@debian.org>  Wed, 26 Oct 2022 12:47:52 +0200
+
+node-filesize (10.0.3+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * Update excluded files list
+  * New upstream version 10.0.3+dfsg
+  * Refresh patches
+  * Drop build dependency to node-rollup-plugin-babel
+  * Update test, upstream uses mocha now
+
+ -- Yadd <yadd@debian.org>  Sun, 02 Oct 2022 08:36:14 +0200
+
+node-filesize (9.0.11+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 9.0.11+dfsg
+
+ -- Yadd <yadd@debian.org>  Wed, 27 Jul 2022 22:32:23 +0200
+
+node-filesize (8.0.7+dfsg-3) unstable; urgency=medium
+
+  * Team upload
+  * Force LANG=C for test
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Jan 2022 22:42:41 +0100
+
+node-filesize (8.0.7+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Make build reproducible
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Jan 2022 22:31:31 +0100
+
+node-filesize (8.0.7+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 8.0.7+dfsg
+  * Build with rollup
+
+ -- Yadd <yadd@debian.org>  Thu, 27 Jan 2022 22:13:57 +0100
+
+node-filesize (6.1.0+dfsg-5) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+
+ -- Yadd <yadd@debian.org>  Sun, 21 Nov 2021 14:06:10 +0100
+
 node-filesize (6.1.0+dfsg-4) unstable; urgency=medium
 
   * Team upload
